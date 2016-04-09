@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+
+double pi (void);
+
+int main (void){
+
+	printf("%f\n", pi());
+
+}
+		double pi (void){
+
+			double pi = 0, area, p; //variaveis
+			int x;
+
+			for (x = 0; x <= 1000; x++){
+
+			area= pow(-1,x) / (2*x+1);
+			area*=4;
+			p=pi;
+			pi=p+area;
+		}
+
+		return  pi;
+
+}
